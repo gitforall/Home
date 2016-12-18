@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteOne">
+
+<!-- If add more test cases In this suite, You need to add them as bellow. -->
+<test name="SuiteOneCaseOne">
+
+  <packages>
+      <package name="scripts" />
+      	<groups>
+    		<run>
+      		<include name="foo"  />
+    		</run>
+  		</groups>
+   </packages>   
+ 
+  </test>
+  
+
+</suite>

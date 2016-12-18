@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selenium-java-3.0.1/client-combined-3.0.1-nodeps.jar"/>
 	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selenium-java-3.0.1/selenium-server-standalone-3.0.1.jar"/>
@@ -38,5 +38,23 @@
 	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selenium-java-3.0.1/lib/xalan-2.7.2.jar"/>
 	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selenium-java-3.0.1/lib/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selenium-java-3.0.1/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/activation-1.0.2.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/Appium_java-client-1.5.0.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/client-combined-3.0.1-nodeps.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/com.mysql.jdbc_5.1.5.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/extentreports-java-141.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/junit.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/jxl.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/mail.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/mysql-connector-java-3.1.14-bin.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/saxon-9.1.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/selendroid-standalone-0.10.0-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="H:/Testing/selenium/jars/testng-xslt-maven-plugin-test-0.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

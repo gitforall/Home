@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Parallel Run Suite" parallel="classes"  thread-count="3">
+    <test name="Test-1">
+        <parameter name="port" value="4444" />
+        <parameter name="browser" value="*firefox" />
+        <classes>
+            <class name="Parallel_exe.FirefoxTest" />
+        </classes>
+    </test>
+   
+    <test name="Test-2">
+        <parameter name="port" value="4444" />
+        <parameter name="browser" value="*googlechrome" />
+        <classes>
+            <class name="Parallel_exe.ChromeTest" />
+        </classes>
+    </test>
+   
+    <test name="Test-3">
+        <parameter name="port" value="4444" />
+        <parameter name="browser" value="*iexplore" />
+        <classes>
+            <class name="Parallel_exe.IETest" />
+        </classes>
+    </test>
+   
+</suite>

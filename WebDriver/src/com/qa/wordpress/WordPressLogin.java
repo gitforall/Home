@@ -4,15 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.obj.Repo.LoginPage;
-import com.qa.utility.Browser;
+import com.qa.obj_Repo.LoginPage;
+import com.qa.utility.StartBrowser;
 
 public class WordPressLogin {
 
 	@Test
 	public void login() {
 
-		WebDriver driver = Browser.open("chrome","https://wordpress.com/wp-login.php");
+		WebDriver driver = StartBrowser.open("chrome","https://wordpress.com/wp-login.php");
 
 		LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);
 		
