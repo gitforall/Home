@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.qa.obj_Repo;
+package com.qa.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

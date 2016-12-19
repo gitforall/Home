@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.wordpress.WordPressLogin">
+      <class name="com.selenium.test.googlett">
         <methods>
-          <include name="login"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.wordpress.WordPressLogin -->
+      </class> <!-- com.selenium.test.googlett -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

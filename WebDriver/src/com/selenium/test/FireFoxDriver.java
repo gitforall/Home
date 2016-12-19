@@ -4,12 +4,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class google {
+public class FireFoxDriver {
+
+	WebDriver driver;
 	
 	@Test
-	public void test(){
+	public void fireFoxDriver(){
 		System.setProperty("webdriver.gecko.driver", "H:\\Testing\\selenium\\work\\drivers\\geckodriver.exe");
-		WebDriver driver= new FirefoxDriver();
-		driver.get("https://github.com/");
+
+		driver = new FirefoxDriver();
+		driver.get("https://www.google.co.in/");
 	}
 }

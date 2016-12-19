@@ -48,11 +48,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 
 public class utility {
+	static WebDriver driver;
 	Workbook workbook;
 	Sheet sheet;
 
 	public String Excel_path = (System.getProperty("user.dir") + "\\src\\TestData\\Testdata.xls");
-	public static String File_Prop = (System.getProperty("user.dir") + "\\src\\Config_Files\\pathFile.properties");
+	public static String File_Prop = (System.getProperty("user.dir") + "\\src\\com\\qa\\congig\\pathFile.properties");
 	public static String html_report_file = (System.getProperty("user.dir") + "\\src\\Execution_Reports\\HtmlReports\\");
 	public static String imageLocation = (System.getProperty("user.dir") + "\\src\\Execution_Reports\\Screenshots\\");
 	public static Actions builder;
@@ -67,6 +68,12 @@ public class utility {
 	/* loginuser */
 	/**************************************/
 
+	
+	public utility(WebDriver ldriver){
+		this.driver=ldriver;
+	}
+	
+	
 	public static void loginuser(WebDriver driver, String username,
 			String password, String username_locator, String password_locator)
 			throws InterruptedException, AWTException {
@@ -248,27 +255,28 @@ public class utility {
 	 * @throws FileNotFoundException
 	 ***********************************************************************************************************/
 
-	public WebDriver setDriver(WebDriver driver, String browserType,
+	public static WebDriver startBrowser(WebDriver driver, String browserType,
 			String appURL) throws FileNotFoundException, IOException {
 		switch (browserType) {
 		case "chrome":
-			driver = initChromeDriver(driver, appURL);
-			break;
+			  driver = initChromeDriver(driver, appURL);
+			  break;
 		case "IEdriver":
-			driver = IEdriver(driver, appURL);
-			break;
+			  driver = IEdriver(driver, appURL);
+			  break;
 		case "firefox":
-			driver = initFirefoxDriver(appURL);
-			break;
+			 
+			  //driver = initFirefoxDriver(appURL);
+			  break;
 		default:
-			System.out.println("browser : " + browserType
+			  System.out.println("browser : " + browserType
 					+ " is invalid, Launching Firefox as browser of choice..");
-			driver = initFirefoxDriver(appURL);
+			  driver = initFirefoxDriver(appURL);
 		}
 		return driver;
 	}
 
-	private WebDriver IEdriver(WebDriver driver, String appURL)
+	private static WebDriver IEdriver(WebDriver driver, String appURL)
 			throws FileNotFoundException, IOException {
 		prop.load(new FileInputStream(File_Prop));
 		System.out.println("Launching IEdriver..");
@@ -282,15 +290,16 @@ public class utility {
 		return driver;
 	}
 
-	private WebDriver initFirefoxDriver(String appURL) {
+	private static WebDriver initFirefoxDriver(String appURL) {
 		System.out.println("Launching Firefox browser..");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("Webdriver.gecko.driver", "H:\\Testing\\selenium\\drivers\\geckodriver.exe");
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to(appURL);
+		driver.get(appURL);
 		return driver;
 	}
 
-	private WebDriver initChromeDriver(WebDriver driver, String appURL)
+	private static WebDriver initChromeDriver(WebDriver driver, String appURL)
 			throws FileNotFoundException, IOException {
 		prop.load(new FileInputStream(File_Prop));
 		System.out.println("Launching google chrome with new profile..");
@@ -303,7 +312,7 @@ public class utility {
 				prop.getProperty("chrome_driver"));
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		driver = new ChromeDriver(capabilities);
-		driver.navigate().to(appURL);
+		driver.get(appURL);
 		return driver;
 	}
 

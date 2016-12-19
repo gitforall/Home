@@ -14,12 +14,11 @@ public class StartBrowser {
 	public static  WebDriver open(String BrowserName , String url){
 		
 		if(BrowserName.equalsIgnoreCase("Firefox")){
-			System.setProperty("Webdriver.gecko.driver", "H:\\Testing\\selenium\\drivers\\geckodriver.exe");
-
+			System.setProperty("webdriver.gecko.driver", "H:\\Testing\\selenium\\work\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			
 		}else if(BrowserName.equalsIgnoreCase("Chrome")){
-			  System.setProperty("webdriver.chrome.driver",  "H:\\Testing\\selenium\\drivers\\chromedriver.exe"); 
+			  System.setProperty("webdriver.chrome.driver",  "H:\\Testing\\selenium\\work\\drivers\\chromedriver.exe"); 
 			  ChromeOptions  options = new ChromeOptions();
 			  options.addArguments("--disable-extensions");
 			  options.addArguments("--test-type");

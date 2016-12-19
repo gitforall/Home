@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.qa.obj_Repo.LoginPage;
+import com.qa.pages.LoginPage;
 import com.qa.utility.StartBrowser;
 
 public class WordPressLogin {
