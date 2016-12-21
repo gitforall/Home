@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58427" started-at="2016-12-19T17:33:30Z" finished-at="2016-12-19T17:34:28Z">
+  <suite name="Default suite" duration-ms="36072" started-at="2016-12-21T18:13:45Z" finished-at="2016-12-21T18:14:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58427" started-at="2016-12-19T17:33:30Z" finished-at="2016-12-19T17:34:28Z">
-      <class name="com.qa.wordpress.WordPressLogin">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.qa.wordpress.WordPressLogin@42d80b78]" name="login" duration-ms="58400" started-at="2016-12-19T23:03:30Z" finished-at="2016-12-19T23:04:28Z">
+    <test name="Default test" duration-ms="36072" started-at="2016-12-21T18:13:45Z" finished-at="2016-12-21T18:14:21Z">
+      <class name="com.selenium.test.google">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.selenium.test.google@6a41eaa2]" name="test" duration-ms="36057" started-at="2016-12-21T23:43:45Z" finished-at="2016-12-21T23:44:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- com.qa.wordpress.WordPressLogin -->
+        </test-method> <!-- test -->
+      </class> <!-- com.selenium.test.google -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,8 +3,13 @@
  */
 package com.qa.pages;
 
+import java.awt.event.ActionEvent;
+
+import junit.framework.Assert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -17,7 +22,6 @@ public class LoginPage
 {
 
 	WebDriver driver;
-	
 	
 	public  LoginPage(WebDriver ldriver)
 	{
@@ -41,6 +45,9 @@ public class LoginPage
 		username.sendKeys(uid);
 		password.sendKeys(pwd);
 		submit_btn.click();
+		
+		
+		
 	}
 	
 }

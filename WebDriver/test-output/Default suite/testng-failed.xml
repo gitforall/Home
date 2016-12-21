@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.test.googlett">
+      <class name="com.selenium.test.google">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- com.selenium.test.googlett -->
+      </class> <!-- com.selenium.test.google -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
